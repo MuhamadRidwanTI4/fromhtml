@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registrasi Siswa</title>
+	<style>
+		#card {
+		height: 720px;
+		width: 780px;
+		margin: 0 auto;
+		}
+		.right{
+			margin-left: auto;
+			margin-right: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id="card">
+	<form action="fromsuccses.html" method="POST">
+		<header style="color:medium; font-family: sans-serif;">
+			<h1>Registrasi Siswa</h1>
+		</header>
+		<br></br>
+		<table class="right">
+			<tr>
+				<td>Date</td>
+				<td><input type="text" name="brith" value=""style=""required></td>
+			</tr>
+		</table>
+		<br/></br/>
+		<h2 style="font-family: sans-serif;">Personal Information </h2>
+		<hr>
+		<table>
+			<tr>
+				<td><label>Nama:</label></td>
+				<td><input type="text" name="nama" value="" style="width: 665px;"required/></td>
+			</tr>
+			<tr>
+			<td><label>Date Of Birth</label></td>
+			<td><input type="date" name="brith" value="" style="width: 665px;"required/></td>
+			</tr>
+			<tr>
+		</table>
+		<br/>
+		<h2 style="font-family: sans-serif;">Contact Information</h2>
+		<hr/>
+		<table>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" name="address" value="" style="width:380px;" required/></td>
+			</tr>
+			<tr>
+				<td>City</label>
+				<td><input type="text" name="password" value="" required/></td>
+				<td>Province/State</td>
+				<td><input type="text" name="state" value="" required/></td>
+			</tr>
+			<tr>
+				<td>Zip Code</td>
+				<td><input type="number" name="zipcode" value=""></td>
+				<td>Country</td>
+				<td><input type="text" name="country" value=""required/></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="tel" id="phone" value="" required></td>
+				<td>Email</td>
+				<td><input type="email" name="email" value="" required></td>
+			</tr>
+			<tr>
+				<td>Membership</td>
+				<td>
+					<input type="radio" name="member" value="reguler" required />Reguler
+					<input type="radio" name="member" value="premium" required />Premium
+					<input type="radio" name="member" value="vip" required/>VIP
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<h2 style="font-family: sans-serif;"> Course Details</h2>
+		<hr/>
+		<table>
+			<tr>
+				<td>Course Nama</td>
+				<td><input type="text" name="course" value="" required></td>
+			</tr>
+			<tr>
+				<td>Payment Details</td>
+				<td>
+					<input type="radio" name="payment" value="cash" required>Cash
+					<input type="radio" name="payment" value="cheque" required>Cheque
+					<input type="radio" name="payment" value="credit" required>Credit
+				</td>
+			</tr>
+			<tr>
+				<td>Comments</td>
+				<td><input type="text" name="comments" value="" style="width:665px;"></td>
+			</tr>
+		</table>
+		<br>
+		<footer>
+			<table>
+				<tr>
+					<td>
+						<textarea name="signature" cols="53" row="5" placeholder="Student's Signature"></textarea>
+					</td>
+					<td>
+						<textarea name="validate" cols="53" row="5" placeholder="Validated By"></textarea>
+					</td>
+				</tr>
+			</table>
+			<br/>
+				<input type="submit" value="send">
+		</footer>
+	</form>
+	</div>
+</body>
+</html>
